@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cat Family</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cat Family Generator</h1>
+      <form id="cat-form">
+        <label for="name">What is your name?</label>
+        <input id="name" type="text" class="form-control">
+        <div class="form-group">
+          <label for="age">What's the ideal age for your cat:</label>
+          <select class="form-control" id="age">
+            <option value="1">1 year</option>
+            <option value="2">2 years</option>
+            <option value="3">3 years</option>
+            <option value="4">4 years</option>
+            <option value="5">5 years</option>
+            <option value="6">6 years</option>
+            <option value="7">7 years</option>
+            <option value="8">8 years</option>
+            <option value="9">9 years</option>
+            <option value="10">10 years</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="color">What color do you want your cat to be?</label>
+          <div class="radio"><label><input type="radio" name="color" value="brown" checked>Brown (or brownish)</label>
+          </div>
+          <div class="radio"><label><input type="radio" name="color" value="orange">Orange</label>
+          </div>
+          <div class="radio"><label><input type="radio" name="color" value="white">White / Cream</label>
+          </div>
+          <div class="radio"><label><input type="radio" name="color" value="black">Black</label>
+          </div>
+          <div class="radio"><label><input type="radio" name="color" value="grey">Gray</label>
+          </div>
+        </div>
+        <label for="catName">What would you like to name your cat?</label>
+        <input id="catName" type="text" class="form-control">
+        <div class="form-group">
+          <label for="personality">What do you want your cat's personality to be like?</label>
+          <div class="radio"><label><input type="radio" name="personality" value="independent" checked>Independent</label>
+          </div>
+          <div class="radio"><label><input type="radio" name="personality" value="playful">Playful</label>
+          </div>
+          <div class="radio"><label><input type="radio" name="personality" value="cuddly">Cuddly</label>
+          </div>
+          <div class="radio"><label><input type="radio" name="personality" value="curious">Curious</label>
+          </div>
+        </div>
+        <button type="submit">Show me my dream cat!</button>
+      </form>
+      <span id="results">
+        <p>Your cat enjoys: <span id="personalityReturn"></span> </p>
+				<div id="show-img"></div>
+      </span>
+			<div class="row">
+				<div class="col-md-4" id="show-orange"></div>
+				<div class="col-md-4" id="show-black"></div>
+			</div>
+    </div>
+  </body>
+</html>
