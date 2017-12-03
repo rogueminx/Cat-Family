@@ -9,10 +9,10 @@ function Cat (catName, age, personality, color) {
 	this.curious = ["Trying to catch birds through windows", "Climbing onto the refridgerator", "Batting breakables off of shelves", "Greeting visitors", "Trying to escape out the front door", "Eating food you left on out on the counter", "Getting lost in walls"];
 	this.catColor = color;
 	this.orange = ["<img src='img/orange/orange01.jpg' width='100%'>", "<img src='img/orange/orange02.jpg' width='100%'>"];
-	this.white = [];
-	this.black = [];
-	this.brown = [];
-	this.grey = [];
+	this.white = ["<img src='img/white/white01.jpg' width='100%'>", "<img src='img/white/white02.jpg' width='100%'>", "<img src='img/white/white03.jpg' width='100%'>"];
+	this.black = ["<img src='img/black/black01.jpg' width='100%'>", "<img src='img/black/black02.jpg' width='100%'>"];
+	this.brown = ["<img src='img/brown/brown01.jpg' width='100%'>", "<img src='img/brown/brown02.jpg' width='100%'>", "<img src='img/brown/brown03.jpg' width='100%'>"];
+	this.grey = ["<img src='img/grey/grey01.jpg' width='100%'>", "<img src='img/grey/grey02.jpg' width='100%'>", "<img src='img/grey/grey03.jpg' width='100%'>"];
 	};
 
 Cat.prototype.Random = function() {
@@ -29,14 +29,20 @@ Cat.prototype.Random = function() {
 Cat.prototype.randomImg = function() {
   if (this.catColor === "orange") {
       var orangePic = this.orange[Math.floor(Math.random() * this.orange.length)];
-			$("#show-orange").html(catPic);
+			$("#show-orange").html(orangePic);
+		} else if (this.catColor === "black") {
+	    var blackPic = this.black[Math.floor(Math.random() * this.black.length)];
+			$("#show-orange").html(blackPic);
+		} else if (this.catColor === "white") {
+		  var whitePic = this.white[Math.floor(Math.random() * this.white.length)];
+			$("#show-orange").html(whitePic);
+		} else if (this.catColor === "grey") {
+		  var greyPic = this.grey[Math.floor(Math.random() * this.grey.length)];
+			$("#show-orange").html(greyPic);
+		} else {
+			var brownPic = this.brown[Math.floor(Math.random() * this.brown.length)];
+			$("#show-orange").html(brownPic);
 		}
-  // } else if (this.personalityAnswer === "curious") {
-  //     return (this.curious[Math.floor(Math.random() * this.curious.length)])
-  // } else if (this.personalityAnswer === "playful") {
-  //     return (this.playful[Math.floor(Math.random() * this.playful.length)])
-  // } else (this.personalityAnswer === "independent")
-  //     return (this.independent[Math.floor(Math.random() * this.independent.length)])
 };
 
 // function Color(color) {
