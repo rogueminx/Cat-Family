@@ -29,19 +29,19 @@ Cat.prototype.Random = function() {
 Cat.prototype.randomImg = function() {
   if (this.catColor === "orange") {
       var orangePic = this.orange[Math.floor(Math.random() * this.orange.length)];
-			$("#show-orange").html(orangePic);
+			$("#show-cat").html(orangePic);
 		} else if (this.catColor === "black") {
 	    var blackPic = this.black[Math.floor(Math.random() * this.black.length)];
-			$("#show-orange").html(blackPic);
+			$("#show-cat").html(blackPic);
 		} else if (this.catColor === "white") {
 		  var whitePic = this.white[Math.floor(Math.random() * this.white.length)];
-			$("#show-orange").html(whitePic);
+			$("#show-cat").html(whitePic);
 		} else if (this.catColor === "grey") {
 		  var greyPic = this.grey[Math.floor(Math.random() * this.grey.length)];
-			$("#show-orange").html(greyPic);
+			$("#show-cat").html(greyPic);
 		} else {
 			var brownPic = this.brown[Math.floor(Math.random() * this.brown.length)];
-			$("#show-orange").html(brownPic);
+			$("#show-cat").html(brownPic);
 		}
 };
 
@@ -75,8 +75,11 @@ $(document).ready(function(){
 		newCat = new Cat(catName, age, personalityAnswer, catColor);
 		// newCat.Random();
 		newCat.randomImg();
-		console.log(newCat);
-		console.log(newCat.orange);
+		$("#fam-name").text(personName);
+		$("#returnCatName").text(newCat.catName);
+		$("#returnAge").text(newCat.age);
+		$("#returnPersonality").text(newCat.Random());
+
 		// console.log(newCat.personality);
 		// var newColor = new Color(catColor);
 		// console.log(newColor);
