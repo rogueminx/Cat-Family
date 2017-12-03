@@ -10,7 +10,7 @@ function Cat (catName, age, personality, color) {
 	this.catColor = color;
 	this.orange = ["<img src='img/orange/orange01.jpg' width='100%'>", "<img src='img/orange/orange02.jpg' width='100%'>"];
 	this.white = ["<img src='img/white/white01.jpg' width='100%'>", "<img src='img/white/white02.jpg' width='100%'>", "<img src='img/white/white03.jpg' width='100%'>"];
-	this.black = ["<img src='img/black/black01.jpg' width='100%'>", "<img src='img/black/black02.jpg' width='100%'>"];
+	this.black = ["<img src='img/black/black01.jpg' width='100%'>"];
 	this.brown = ["<img src='img/brown/brown01.jpg' width='100%'>", "<img src='img/brown/brown02.jpg' width='100%'>", "<img src='img/brown/brown03.jpg' width='100%'>"];
 	this.grey = ["<img src='img/grey/grey01.jpg' width='100%'>", "<img src='img/grey/grey02.jpg' width='100%'>", "<img src='img/grey/grey03.jpg' width='100%'>"];
 	};
@@ -79,6 +79,10 @@ $(document).ready(function(){
 		$("#returnCatName").text(newCat.catName);
 		$("#returnAge").text(newCat.age);
 		$("#returnPersonality").text(newCat.Random());
+
+		var newDiv = document.getElementById("results");
+
+		document.getElementById("#final").appendChild(newDiv);
 
 		// console.log(newCat.personality);
 		// var newColor = new Color(catColor);
