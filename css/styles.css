@@ -1,0 +1,28 @@
+.jumbotron {
+	background-image: url("../img/background.jpg");
+	text-align: center;
+	padding-top: 0px;
+}
+
+.jumbotron h1 {
+	font-family: 'Bungee', cursive;
+	color: #FF9F1C;
+	font-size: 80px;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+}
+
+#catResults {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+.container img {
+	width: 300px;
+	float: left;
+}

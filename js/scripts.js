@@ -10,7 +10,7 @@ function Cat (catName, age, personality, color) {
 	this.catColor = color;
 	this.orange = ["<img src='img/orange/orange01.jpg' width='100%'>", "<img src='img/orange/orange02.jpg' width='100%'>"];
 	this.white = ["<img src='img/white/white01.jpg' width='100%'>", "<img src='img/white/white02.jpg' width='100%'>", "<img src='img/white/white03.jpg' width='100%'>"];
-	this.black = ["<img src='img/black/black01.jpg' width='100%'>"];
+	this.black = ["<img src='img/black/black01.jpg' width='100%'>", "<img src='img/black/black02.jpg' width='100%'>"];
 	this.brown = ["<img src='img/brown/brown01.jpg' width='100%'>", "<img src='img/brown/brown02.jpg' width='100%'>", "<img src='img/brown/brown03.jpg' width='100%'>"];
 	this.grey = ["<img src='img/grey/grey01.jpg' width='100%'>", "<img src='img/grey/grey02.jpg' width='100%'>", "<img src='img/grey/grey03.jpg' width='100%'>"];
 	};
@@ -29,38 +29,27 @@ Cat.prototype.Random = function() {
 Cat.prototype.randomImg = function() {
   if (this.catColor === "orange") {
       var orangePic = this.orange[Math.floor(Math.random() * this.orange.length)];
-			$("#show-cat").html(orangePic);
+			// $("#show-cat").html(orangePic);
+			return (orangePic);
 		} else if (this.catColor === "black") {
 	    var blackPic = this.black[Math.floor(Math.random() * this.black.length)];
-			$("#show-cat").html(blackPic);
+			// $("#show-cat").html(blackPic);
+			return (blackPic);
 		} else if (this.catColor === "white") {
 		  var whitePic = this.white[Math.floor(Math.random() * this.white.length)];
-			$("#show-cat").html(whitePic);
+			// $("#show-cat").html(whitePic);
+			return (whitePic);
 		} else if (this.catColor === "grey") {
 		  var greyPic = this.grey[Math.floor(Math.random() * this.grey.length)];
-			$("#show-cat").html(greyPic);
+			// $("#show-cat").html(greyPic);
+			return (greyPic);
 		} else {
 			var brownPic = this.brown[Math.floor(Math.random() * this.brown.length)];
-			$("#show-cat").html(brownPic);
+			// $("#show-cat").html(brownPic);
+			return (brownPic);
 		}
 };
 
-// function Color(color) {
-// 	this.color = color;
-// };
-
-
-// Color.prototype.display = function() {
-// 	if (this.color === "orange") {
-// 		// var x = document.createElement("IMG");
-// 		// x.setAttribute("src", "img/orange/orange01.jpg");
-// 		// x.setAttribute("alt", "an orange cat");
-// 	}
-// 	else if (this.color === "black") {
-// 		$("#show-black").html("<img src='img/black/black01.jpg' width='100%' alt='an orange cat'>");
-//
-// 	}
-// };
 
 //user interface logic
 $(document).ready(function(){
@@ -71,35 +60,15 @@ $(document).ready(function(){
 		var catColor = $("input:radio[name=color]:checked").val();
     var catName = $("#catName").val();
     var personalityAnswer = $("input:radio[name=personality]:checked").val();
-    // var randomPersonality = new Personality(personality);
 		newCat = new Cat(catName, age, personalityAnswer, catColor);
 		// newCat.Random();
-		newCat.randomImg();
+		// newCat.randomImg();
 		$("#fam-name").text(personName);
-		$("#returnCatName").text(newCat.catName);
-		$("#returnAge").text(newCat.age);
-		$("#returnPersonality").text(newCat.Random());
-
-		var newDiv = document.getElementById("results");
-
-		document.getElementById("#final").appendChild(newDiv);
-
-		// console.log(newCat.personality);
-		// var newColor = new Color(catColor);
-		// console.log(newColor);
-		// newColor.display();
-    // $("input:checkbox[name=topping]:checked").each(function(){
-    //   newPizza.toppingPrice += parseFloat($(this).val());
-    // });
-    // $("input:checkbox[name=topping]:checked").each(function(){
-    //   newPizza.toppings += parseFloat($(this).val());
-    // });
-		// console.log(age);
-		// console.log(color);
-    // console.log(personality);
-    // console.log(randomPersonality);
-    // console.log(randomPersonality.Random());
-
+		// $("#show-cat").html(newCat.randomImg())
+		$("#results").prepend("<div id='catResults' class='row'>" + "<div class='col-md-4'>" + newCat.randomImg() + "</div>" + "<div class='col-md-8'>" + "<p>Name: " + newCat.catName + "</p>" + "<p>Age: " + newCat.age + "</p>" + "<p>Favorite Thing: " + newCat.Random() + "</p></div></div>" )
+		// $("#returnCatName").text(newCat.catName);
+		// $("#returnAge").text(newCat.age);
+		// $("#returnPersonality").text(newCat.Random());
 
   });
 });
