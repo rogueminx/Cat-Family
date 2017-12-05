@@ -31,3 +31,7 @@ p {
 .container h2 {
 	text-align: center;
 }
+
+#name-header {
+	display: none;
+}
