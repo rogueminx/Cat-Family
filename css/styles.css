@@ -16,7 +16,7 @@
 #nav ul {
 	list-style: none;
 	text-align: center;
-	width: 75%;
+	width: 30%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -24,7 +24,21 @@
 #nav ul li {
 	float: left;
 	padding: 15px 10px 15px 10px;
+	text-transform: uppercase;
 
+}
+
+#body-left {
+	padding: 100px 125px;
+	text-align: center;
+}
+
+#body-left h3 {
+	font-size: 24px;
+}
+
+#body-left p {
+	font-size: 18px;
 }
 
 p {
@@ -40,13 +54,8 @@ p {
 	margin: 15px 0px 15px 0px;
 }
 
-.container img {
-	width: 300px;
-	float: left;
-}
-
-.container h2 {
-	text-align: center;
+form {
+	width: 100%;
 }
 
 #name-header {
