@@ -66,7 +66,13 @@ $(document).ready(function(){
 		$("#fam-name").text(personName);
 		$("#name-header").show();
 		// $("#show-cat").html(newCat.randomImg())
-		$("#results").prepend("<div id='catResults' class='row'>" + "<div class='col-md-4'>" + newCat.randomImg() + "</div>" + "<div class='col-md-8'>" + "<p>Name: " + newCat.catName + "</p>" + "<p>Age: " + newCat.age + "</p>" + "<p>Favorite Thing: " + newCat.Random() + "</p></div></div>" )
+		$("#results").prepend("<div id='catResults' class='row'>" + "<div class='col-md-4'>" + newCat.randomImg() + "</div>" + "<div class='col-md-8'>" + "<h3>Name: " + newCat.catName + "</h3>" + "<h4>Age: " + newCat.age + "</h4>" + "<h4>Favorite Thing: " + newCat.Random() + "</h4></div></div>")
+
+		var color = '#';
+		var letters = ['3D4F53','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0'];
+		color += letters[Math.floor(Math.random() * letters.length)];
+		document.getElementById('catResults').style.background = color;
+
 		// $("#returnCatName").text(newCat.catName);
 		// $("#returnAge").text(newCat.age);
 		// $("#returnPersonality").text(newCat.Random());
