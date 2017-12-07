@@ -20,6 +20,7 @@
 	width: 30%;
 	margin-right: auto;
 	margin-left: auto;
+	font-weight: 900;
 }
 
 #nav ul li {
@@ -30,12 +31,16 @@
 }
 
 #body-left {
-	padding: 100px 125px;
+	padding: 100px;
 	text-align: center;
 }
 
 #body-left h3 {
-	font-size: 24px;
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 60px;
+	font-family: 'Nunito Sans', sans-serif;
+
 }
 
 #body-left p {
@@ -71,4 +76,12 @@ form {
 #thick {
 	font-weight: 900;
 	color: #3D4F53;
+}
+
+#body-img {
+	width: 100%;
+}
+
+#cat-form {
+	display: none;
 }
