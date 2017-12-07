@@ -10,6 +10,16 @@
 	letter-spacing: 40px;
 }
 
+#social {
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 40px;
+}
+
+#social img {
+	margin: 0px 5px;
+}
+
 #nav {
 	text-align: center;
 }
@@ -30,8 +40,12 @@
 
 }
 
+#body {
+	background-color: #FFE4A0;
+}
+
 #body-left {
-	padding: 100px;
+	padding: 80px 100px;
 	text-align: center;
 }
 
@@ -84,4 +98,18 @@ form {
 
 #cat-form {
 	display: none;
+}
+
+#start {
+	padding: 15px 25px;
+	background-color: #EA638C;
+	border-radius: 0px;
+	border: 0px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 30px;
+
 }
