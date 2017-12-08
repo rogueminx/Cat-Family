@@ -17,22 +17,22 @@ function Cat (catName, age, personality, color) {
 
 Cat.prototype.Random = function() {
   if (this.personalityAnswer === "cuddly") {
-			var = cuddleTrait;
+			var cuddleTrait;
 			cuddleTrait = (this.cuddly[Math.floor(Math.random() * this.cuddly.length)]);
 			catFamily.catPersonality.push(cuddleTrait);
 			return (cuddleTrait);
   } else if (this.personalityAnswer === "curious") {
-			var = curiousTrait;
+			var curiousTrait;
 			curiousTrait = (this.curious[Math.floor(Math.random() * this.curious.length)]);
 			catFamily.catPersonality.push(curiousTrait);
 			return (curiousTrait);
   } else if (this.personalityAnswer === "playful") {
-			var = playfulTrait;
+			var playfulTrait;
 			playfulTrait = (this.playful[Math.floor(Math.random() * this.playful.length)]);
 			catFamily.catPersonality.push(playfulTrait);
 			return (playfulTrait);
   } else (this.personalityAnswer === "independent")
-			var = independentTrait;
+			var independentTrait;
 			independentTrait = (this.independent[Math.floor(Math.random() * this.independent.length)]);
 			catFamily.catPersonality.push(independentTrait);
 			return (independentTrait);
