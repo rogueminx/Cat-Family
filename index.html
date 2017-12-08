@@ -66,7 +66,14 @@
               </div>
               <div class="form-group">
                 <label for="color">Color:</label>
-                <div class="radio"><label><input type="radio" name="color" value="brown" checked>Brown (or brownish)</label>
+								<select class="form-control" id="color">
+									<option value="brown">Brown</option>
+                  <option value="orange">Orange</option>
+                  <option value="white">White</option>
+                  <option value="black">Black</option>
+                  <option value="grey">Grey</option>
+								</select>
+                <!-- <div class="radio"><label><input type="radio" name="color" value="brown" checked>Brown (or brownish)</label>
                 </div>
                 <div class="radio"><label><input type="radio" name="color" value="orange">Orange</label>
                 </div>
@@ -75,18 +82,24 @@
                 <div class="radio"><label><input type="radio" name="color" value="black">Black</label>
                 </div>
                 <div class="radio"><label><input type="radio" name="color" value="grey">Gray</label>
-                </div>
+                </div> -->
               </div>
               <div class="form-group">
                 <label for="personality">Personality:</label>
-                <div class="radio"><label><input type="radio" name="personality" value="independent" checked>Independent</label>
+								<select class="form-control" id="personality">
+									<option value="independent">Independent</option>
+									<option value="playful">Playful</option>
+									<option value="cuddly">Cuddly</option>
+									<option value="curious">Curious</option>
+								</select>
+                <!-- <div class="radio"><label><input type="radio" name="personality" value="independent" checked>Independent</label>
                 </div>
                 <div class="radio"><label><input type="radio" name="personality" value="playful">Playful</label>
                 </div>
                 <div class="radio"><label><input type="radio" name="personality" value="cuddly">Cuddly</label>
                 </div>
                 <div class="radio"><label><input type="radio" name="personality" value="curious">Curious</label>
-                </div>
+                </div> -->
               </div>
               <button type="submit" id="dreamCat">Show me my dream cat!</button>
             </form>

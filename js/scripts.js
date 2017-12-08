@@ -102,7 +102,7 @@ $(document).ready(function(){
     event.preventDefault();
     var personName = $("#name").val();
     var age = $("#age").val();
-		var catColor = $("input:radio[name=color]:checked").val();
+		var catColor = $("#color").val();
     var catName = $("#catName").val();
     var personalityAnswer = $("input:radio[name=personality]:checked").val();
 		newCat = new Cat(catName, age, personalityAnswer, catColor);
