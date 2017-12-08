@@ -9,26 +9,26 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-			<div class="row" id="header">
-				<div class="col-md-3" id="social">
-					<img src="img/facebook.png" alt="facebook logo"></img>
-					<img src="img/twitter.png" alt="twitter logo"></img>
-					<img src="img/instagram.png" alt="instagram logo"></img>
-				</div>
-				<div class="col-md-6">
-      		<h1><span id="thin">cat</span><span id="thick">family</span></h1>
-				</div>
-				<div class="col-md-3">
-				</div>
+		<div class="row" id="header">
+			<div class="col-md-3" id="social">
+				<img src="img/facebook.png" alt="facebook logo"></img>
+				<img src="img/twitter.png" alt="twitter logo"></img>
+				<img src="img/instagram.png" alt="instagram logo"></img>
 			</div>
-			<div class="row" id="nav">
-				<ul>
-					<a href="#"><li class="active">Add a Cat</li></a>
-					<a href="#"><li>Your Family</li></a>
-					<a href="#"><li>About Us</li></a>
-				</ul>
+			<div class="col-md-6">
+    		<h1><span id="thin">cat</span><span id="thick">family</span></h1>
 			</div>
-			<div class="row" id="body">
+			<div class="col-md-3">
+			</div>
+		</div>
+		<div class="row" id="nav">
+			<ul>
+				<a href="#"><li class="active" id="addACat">Add a Cat</li></a>
+				<a href="#"><li id="yourFamily">Your Family</li></a>
+				<a href="#"><li id="aboutUs">About Us</li></a>
+			</ul>
+		</div>
+			<div class="row" id="landingSection">
 				<div class="col-md-6" id="body-left">
 					<h3>Everyone deserves a home filled with cats.</h3>
 					<p>Our mission is to connect loving, responsible people with the feline family of their dreams. Simply answer a few questions and our sophisticated algorithm will match you to a cat ready for adoption.</p>
@@ -36,63 +36,104 @@
 				</div>
 				<div class="col-md-6">
 					<img id="body-img" src="img/body.jpg"></img>
-			      <form id="cat-form">
-			        <label for="name">What is your name?</label>
-			        <input id="name" type="text" class="form-control">
-			        <div class="form-group">
-			          <label for="age">What's the ideal age for your cat:</label>
-			          <select class="form-control" id="age">
-			            <option value="1">1 year</option>
-			            <option value="2">2 years</option>
-			            <option value="3">3 years</option>
-			            <option value="4">4 years</option>
-			            <option value="5">5 years</option>
-			            <option value="6">6 years</option>
-			            <option value="7">7 years</option>
-			            <option value="8">8 years</option>
-			            <option value="9">9 years</option>
-			            <option value="10">10 years</option>
-			          </select>
-			        </div>
-			        <div class="form-group">
-			          <label for="color">What color do you want your cat to be?</label>
-			          <div class="radio"><label><input type="radio" name="color" value="brown" checked>Brown (or brownish)</label>
-			          </div>
-			          <div class="radio"><label><input type="radio" name="color" value="orange">Orange</label>
-			          </div>
-			          <div class="radio"><label><input type="radio" name="color" value="white">White / Cream</label>
-			          </div>
-			          <div class="radio"><label><input type="radio" name="color" value="black">Black</label>
-			          </div>
-			          <div class="radio"><label><input type="radio" name="color" value="grey">Gray</label>
-			          </div>
-			        </div>
-			        <label for="catName">What would you like to name your cat?</label>
-			        <input id="catName" type="text" class="form-control">
-			        <div class="form-group">
-			          <label for="personality">What do you want your cat's personality to be like?</label>
-			          <div class="radio"><label><input type="radio" name="personality" value="independent" checked>Independent</label>
-			          </div>
-			          <div class="radio"><label><input type="radio" name="personality" value="playful">Playful</label>
-			          </div>
-			          <div class="radio"><label><input type="radio" name="personality" value="cuddly">Cuddly</label>
-			          </div>
-			          <div class="radio"><label><input type="radio" name="personality" value="curious">Curious</label>
-			          </div>
-			        </div>
-			        <button type="submit">Show me my dream cat!</button>
-			      </form>
-            <div class="row" id="results">
-            </div>
-			</div>
+        </div>
+      </div>
+
+      <div class="row" id="addACatSection">
+        <div class="col-md-6" id="addACatSectionLeft">
+					<h3>Tell us about your ideal cat:</h3>
+            <form id="cat-form">
+              <!-- <label for="name">What is your name?</label>
+              <input id="name" type="text" class="form-control"> -->
+						<div class="form-group">
+							<label for="catName">Name:</label>
+							<input id="catName" type="text" class="form-control">
+						</div>
+              <div class="form-group">
+                <label for="age">Age:</label>
+                <select class="form-control" id="age">
+                  <option value="1">1 year</option>
+                  <option value="2">2 years</option>
+                  <option value="3">3 years</option>
+                  <option value="4">4 years</option>
+                  <option value="5">5 years</option>
+                  <option value="6">6 years</option>
+                  <option value="7">7 years</option>
+                  <option value="8">8 years</option>
+                  <option value="9">9 years</option>
+                  <option value="10">10 years</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="color">Color:</label>
+                <div class="radio"><label><input type="radio" name="color" value="brown" checked>Brown (or brownish)</label>
+                </div>
+                <div class="radio"><label><input type="radio" name="color" value="orange">Orange</label>
+                </div>
+                <div class="radio"><label><input type="radio" name="color" value="white">White / Cream</label>
+                </div>
+                <div class="radio"><label><input type="radio" name="color" value="black">Black</label>
+                </div>
+                <div class="radio"><label><input type="radio" name="color" value="grey">Gray</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="personality">Personality:</label>
+                <div class="radio"><label><input type="radio" name="personality" value="independent" checked>Independent</label>
+                </div>
+                <div class="radio"><label><input type="radio" name="personality" value="playful">Playful</label>
+                </div>
+                <div class="radio"><label><input type="radio" name="personality" value="cuddly">Cuddly</label>
+                </div>
+                <div class="radio"><label><input type="radio" name="personality" value="curious">Curious</label>
+                </div>
+              </div>
+              <button type="submit" id="dreamCat">Show me my dream cat!</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <img id="form-img" src="img/form.jpg"></img>
+          </div>
+        </div>
+
+        <div class="row" id="resultSection">
+          <div class="col-md-6">
+            <div id="name-header"><h2><span id="fam-name"></span></h2></div>
+    				<span id="results"></span>
+            <button type="submit" id="addtoFamily">Yes! Save to Family!</button>
+            <button type="submit" id="showFormAgain">No, I'd like to pick another.</button>
+          </div>
+          <div class="col-md-6" id="photoResults">
+
+          </div>
+        </div>
+
+        <div class="row" id="catFamilySection">
+          <div class="col-md-6">
+            <h2>catFamilySection</h2>
+          </div>
+          <div class="col-md-6">
+
+          </div>
+        </div>
+
+        <div class="row" id="aboutUsSection">
+          <div class="col-md-6">
+            <h2>ABOUT US MOTHERFUCKERS</h2>
+          </div>
+          <div class="col-md-6">
+
+          </div>
+        </div>
 
 
 
 
-				</div>
-				<div id="name-header"><h2><span id="fam-name"></span>'s Cat Family</h2></div>
 
-	</div>
+
+
+
+  </div>
   <div id="footer">
     <img src="img/facebook.png" alt="facebook logo"></img>
     <img src="img/twitter.png" alt="twitter logo"></img>
