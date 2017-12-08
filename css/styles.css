@@ -65,7 +65,7 @@ body {
 	color: black;
 }
 
-#body {
+#landingSection {
 	background-color: #FFE4A0;
 }
 
@@ -82,7 +82,6 @@ body {
 	line-height: 60px;
 	font-family: 'Nunito Sans', sans-serif;
 	color: #3D4F53;
-
 }
 
 #body-left p {
@@ -93,6 +92,20 @@ p {
 	font-family: 'Raleway', sans-serif;
 }
 
+.form-group {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+label {
+	flex-basis: 100px;
+}
+
+.form-control {
+	width: 400px;
+}
+
 #catResults {
 	border-style: solid;
 	border-width: 1px;
@@ -100,25 +113,18 @@ p {
 	border-radius: 15px;
 	padding: 15px;
 	margin: 15px 0px 15px 0px;
-	color: white;
 }
 
-#catResults h3 {
-	font-size: 28px;
-	font-family: 'Nunito Sans', sans-serif;
+#addACatSection {
+	background-color: #FFE4A0;
 }
 
-#catResults h4 {
-	font-size: 22px;
-	font-family: 'Nunito Sans', sans-serif;
-}
-
-form {
-	width: 100%;
-}
-
-#name-header {
-	display: none;
+#addACatSectionLeft{
+	padding-top: 4%;
+	padding-left: 6%;
+	padding-right: 6%
+	padding-bottom: 4%;
+	text-align: left;
 }
 
 #thin {
@@ -135,8 +141,28 @@ form {
 	width: 100%;
 }
 
-#cat-form {
+#addACatSection {
 	/*display: none;*/
+}
+
+#catFamilySection {
+	display: none;
+}
+
+#aboutUsSection {
+	display: none;
+}
+
+#resultSection {
+	/*display: none;*/
+}
+
+#form-img {
+	width: 100%;
+}
+
+#aboutUsSection{
+	display: none;
 }
 
 #footer {
@@ -147,7 +173,6 @@ form {
 
 #footer img {
 	margin: 0px 5px;
-
 }
 
 #footer p {
@@ -189,6 +214,27 @@ form {
 }
 .btn-change7:hover{
     box-shadow:250px 0 0 #FFE4A0 inset;
+		border: solid #3D4F53 1px;
+		color: #3D4F53;
+}
+
+#dreamCat {
+	padding: 15px 25px;
+	background-color: #EA638C;
+	border-radius: 0px;
+	border: 0px;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 20px;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+    box-shadow:0px 0 0 #EA638C  inset;
+}
+#dreamCat:hover{
+    box-shadow:300px 0 0 #FFE4A0 inset;
 		border: solid #3D4F53 1px;
 		color: #3D4F53;
 }
