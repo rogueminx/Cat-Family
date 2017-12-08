@@ -69,7 +69,7 @@ $(document).ready(function(){
 		$("#results").prepend("<div id='catResults' class='row'>" + "<div class='col-md-4'>" + newCat.randomImg() + "</div>" + "<div class='col-md-8'>" + "<h3>Name: " + newCat.catName + "</h3>" + "<h4>Age: " + newCat.age + "</h4>" + "<h4>Favorite Thing: " + newCat.Random() + "</h4></div></div>")
 
 		var color = '#';
-		var letters = ['3D4F53','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0'];
+		var letters = ['EA638C','6A97BE','F4AFB4','3D4F53'];
 		color += letters[Math.floor(Math.random() * letters.length)];
 		document.getElementById('catResults').style.background = color;
 
