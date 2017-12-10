@@ -116,6 +116,7 @@ label {
 	margin-top: 0px;
 	border: none;
 	border-radius: 0px;
+	background-color: white;
 }
 
 #cat-form {
@@ -133,6 +134,7 @@ label {
 
 #addACatSection {
 	background-color: #FFE4A0;
+	display: none;
 }
 
 #addACatSectionLeft{
@@ -170,7 +172,7 @@ label {
 }
 
 #resultSection {
-	/*display: none;*/
+	display: none;
 }
 
 #form-img {
