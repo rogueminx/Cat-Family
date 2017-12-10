@@ -100,10 +100,26 @@ p {
 
 label {
 	flex-basis: 100px;
+	background-color: #EA638C;
+	color: white;
+	height: 40px;
+	border: none;
+	padding-top: 10px;
+	padding-left: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: lighter;
 }
 
 .form-control {
-	width: 400px;
+	width: 75%;
+	height: 40px;
+	margin-top: 0px;
+	border: none;
+	border-radius: 0px;
+}
+
+#cat-form {
+	/*width: 80%;*/
 }
 
 #catResults {
@@ -197,7 +213,7 @@ label {
 
 }*/
 
-.btn-change7{
+/*.btn-change7{
 	padding: 15px 25px;
 	background-color: #EA638C;
 	border-radius: 0px;
@@ -216,9 +232,9 @@ label {
     box-shadow:250px 0 0 #FFE4A0 inset;
 		border: solid #3D4F53 1px;
 		color: #3D4F53;
-}
+}*/
 
-#dreamCat {
+button {
 	padding: 15px 25px;
 	background-color: #EA638C;
 	border-radius: 0px;
@@ -233,7 +249,7 @@ label {
     -webkit-transition-timing-function: linear;
     box-shadow:0px 0 0 #EA638C  inset;
 }
-#dreamCat:hover{
+button:hover{
     box-shadow:300px 0 0 #FFE4A0 inset;
 		border: solid #3D4F53 1px;
 		color: #3D4F53;
