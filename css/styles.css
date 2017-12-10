@@ -181,6 +181,29 @@ label {
 
 #resultSection {
 	display: none;
+	background-color: #6A97BE;
+	color: white;
+}
+
+#resultsSection-left {
+	padding-top: 4%;
+	padding-left: 6%;
+	padding-right: 6%
+	padding-bottom: 4%;
+	text-align: left;
+}
+
+#name-header {
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 60px;
+	font-family: 'Nunito Sans', sans-serif;
+	color: white;
+}
+
+#results {
+	font-size: 18px;
+
 }
 
 #form-img {
@@ -260,7 +283,7 @@ button {
     box-shadow:0px 0 0 #EA638C  inset;
 }
 button:hover{
-    box-shadow:300px 0 0 #FFE4A0 inset;
+    box-shadow:350px 0 0 #FFE4A0 inset;
 		border: solid #3D4F53 1px;
 		color: #3D4F53;
 }
