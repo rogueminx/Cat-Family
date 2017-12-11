@@ -6,13 +6,14 @@ function Cat (catName, age, personality, color) {
 	this.catColor = color;
 	this.catPhoto = 0;
 	this.catTrait = 0;
+	this.catLocation = 0;
 	this.independent = ["Staring out windows", "Hiding in boxes", "Being fed treats", "Meowing at 3AM", "Sitting on the highest shelf of the cat tree", "Rubbing around your ankles and then running away", "Watching you sleep", "Long naps"];
 	this.playful = ["Attacking ankles", "Playing with toy mice", "Chasing laser pointers", "Rolling around on the floor for no reason", "Eating house plants", "Playing fetch", "Eating catnip, and then running around the house"];
 	this.cuddly = ["Sitting on your lap", "Being held like a baby", "Laying on your computer when you are trying to work", "Purring", "Waking you up by putting their paw on your face", "Sleeping under the blankets", "Baking bread", "Good ear scratches"];
 	this.curious = ["Trying to catch birds through windows", "Climbing onto the refridgerator", "Batting breakables off of shelves", "Greeting visitors", "Trying to escape out the front door", "Eating food you left on out on the counter", "Getting lost in walls"];
 	this.orange = ["<img src='img/orange/orange01.jpg' width='100%'>", "<img src='img/orange/orange02.jpg' width='100%'>"];
 	this.white = ["<img src='img/white/white01.jpg' width='100%'>", "<img src='img/white/white02.jpg' width='100%'>", "<img src='img/white/white03.jpg' width='100%'>"];
-	this.black = ["<img src='img/black/black01.jpg' width='100%'>", "<img src='img/black/black02.jpg' width='100%'>"];
+	this.black = ["<img src='img/black/black01.jpg' width='100%'>"];
 	this.brown = ["<img src='img/brown/brown01.jpg' width='100%'>", "<img src='img/brown/brown02.jpg' width='100%'>", "<img src='img/brown/brown03.jpg' width='100%'>"];
 	this.grey = ["<img src='img/grey/grey01.jpg' width='100%'>", "<img src='img/grey/grey02.jpg' width='100%'>", "<img src='img/grey/grey03.jpg' width='100%'>"];
 	this.location = ["Oregon Humane Society, 1067 NE Columbia Blvd, Portland", "The Pixie Project, 510 NE Martin Luther King Jr Blvd, Portland", "Cat Adoption Team, 14175 SW Galbreath Dr, Sherwood", "Furry Friends Cat Rescue, 6715 NE 63rd St #450, Vancouver", "Animal Aid Inc, 5335 SW 42nd Ave, Portland"]
@@ -69,6 +70,19 @@ Cat.prototype.randomImg = function() {
 		}
 };
 
+Cat.prototype.randomLoc = function() {
+	this.catLocation = this.location[Math.floor(Math.random() * this.location.length)];
+	return (this.catLocation);
+};
+
+catFamily.prototype.allLocations = function() {
+	var catNumber = this.numberOfCats;
+	if (this.numberOfCats >= 1)
+		for (index = 0; index < catNumber ; index += 1){
+			$("#locations").append(this.catName + ": " + this.randomLoc());
+		};
+	};
+
 catFamily.prototype.addtoFamily = function() {
 	if (this.numberOfCats < 1){
 		this.catPhoto.unshift(newCat.catPhoto);
@@ -93,6 +107,8 @@ catFamily.prototype.addtoFamily = function() {
 	};
 	this.numberOfCats += 1;
 };
+
+
 
 catFamily.prototype.showFamily = function() {
 	var currentCatNumber = this.numberOfCats;
@@ -160,6 +176,8 @@ $(document).ready(function(){
 		newcatFamily.showFamily();
     $("#catFamilySection").show();
 		$("#resultSection").hide();
+		$("#adoptionLocations").hide();
+		$("#catFamilySectionLeftInner").show();
 		resetform();
   });
 	$("#addAnotherCat").click(function(event){
@@ -190,6 +208,9 @@ $(document).ready(function(){
   });
 
 	$("#adopt").click(function(event) {
+		$("#catFamilySectionLeftInner").hide();
+		$("#adoptionLocations").show();
+		$("#locations").html(catFamily.allLocations);
 
 	});
 
