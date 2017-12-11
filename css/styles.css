@@ -177,6 +177,21 @@ label {
 
 #aboutUsSection {
 	display: none;
+	padding: 15px;
+	color: white;
+	background-color: #EA638C;
+	font-size: 18px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+#aboutUsSection h2 {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 36px;
+}
+
+.about-img {
+	width: 100%;
 }
 
 #resultSection {
@@ -210,10 +225,6 @@ label {
 	width: 100%;
 }
 
-#aboutUsSection{
-	display: none;
-}
-
 #footer {
 	background-color: white;
 	text-align: center;
@@ -228,6 +239,8 @@ label {
 	font-style: italic;
 	margin-top: 20px;
 }
+
+
 
 /*#start {
 	padding: 15px 25px;
