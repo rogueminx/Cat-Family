@@ -173,6 +173,36 @@ label {
 
 #catFamilySection {
 	display: none;
+	background-color: #FFE4A0;
+	color: #3D4F53;
+
+}
+
+#catFamilySectionLeft {
+	text-align: center;
+	padding-top: 25px;
+	font-size: 18px;
+}
+
+#catFamilySectionLeft h2 {
+	font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #3D4F53;
+}
+
+#catFamilySectionRight {
+
+}
+
+#catFamRow {
+	margin: 15px;
+	padding: 10px 5px;
+	border: solid 1px #F4AFB4;
+	border-radius: 15px;
+	/*color: white;*/
+	font-size: 18px;
 }
 
 #aboutUsSection {
@@ -186,8 +216,11 @@ label {
 }
 
 #aboutUsSection h2 {
-	font-family: 'Nunito Sans', sans-serif;
 	font-size: 36px;
+	font-weight: 400;
+	line-height: 60px;
+	font-family: 'Nunito Sans', sans-serif;
+	color: white;
 }
 
 .about-img {
