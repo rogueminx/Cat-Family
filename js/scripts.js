@@ -79,7 +79,7 @@ catFamily.prototype.allLocations = function() {
 	var catNumber = this.numberOfCats;
 	if (this.numberOfCats >= 1)
 		for (index = 0; index < catNumber ; index += 1){
-			$("#locations").append("<p>" + this.catName[index] + ": " + newCat.randomLoc() + "</p>");
+			$("#locations").append("<p><b>" + this.catName[index] + ":</b> " + newCat.randomLoc() + "</p>");
 		};
 	};
 
