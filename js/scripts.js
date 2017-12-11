@@ -15,6 +15,7 @@ function Cat (catName, age, personality, color) {
 	this.black = ["<img src='img/black/black01.jpg' width='100%'>", "<img src='img/black/black02.jpg' width='100%'>"];
 	this.brown = ["<img src='img/brown/brown01.jpg' width='100%'>", "<img src='img/brown/brown02.jpg' width='100%'>", "<img src='img/brown/brown03.jpg' width='100%'>"];
 	this.grey = ["<img src='img/grey/grey01.jpg' width='100%'>", "<img src='img/grey/grey02.jpg' width='100%'>", "<img src='img/grey/grey03.jpg' width='100%'>"];
+	this.location = ["Oregon Humane Society, 1067 NE Columbia Blvd, Portland", "The Pixie Project, 510 NE Martin Luther King Jr Blvd, Portland", "Cat Adoption Team, 14175 SW Galbreath Dr, Sherwood", "Furry Friends Cat Rescue, 6715 NE 63rd St #450, Vancouver", "Animal Aid Inc, 5335 SW 42nd Ave, Portland"]
 	};
 
 	function catFamily () {
@@ -187,5 +188,9 @@ $(document).ready(function(){
 		$("#resultSection").show();
 		$("#addACatSection").hide();
   });
+
+	$("#adopt").click(function(event) {
+
+	});
 
 });
