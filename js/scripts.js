@@ -76,10 +76,11 @@ Cat.prototype.randomLoc = function() {
 };
 
 catFamily.prototype.allLocations = function() {
+	console.log("this works!");
 	var catNumber = this.numberOfCats;
 	if (this.numberOfCats >= 1)
 		for (index = 0; index < catNumber ; index += 1){
-			$("#locations").append(this.catName + ": " + this.randomLoc());
+			$("#locations").append(this.catName + ": " + newCat.randomLoc());
 		};
 	};
 
@@ -210,7 +211,7 @@ $(document).ready(function(){
 	$("#adopt").click(function(event) {
 		$("#catFamilySectionLeftInner").hide();
 		$("#adoptionLocations").show();
-		$("#locations").html(catFamily.allLocations);
+		$("#locations").html(newcatFamily.allLocations());
 
 	});
 
