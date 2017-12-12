@@ -132,60 +132,61 @@ $(document).ready(function(){
 	$("#addACat").click(function(event){
     event.preventDefault();
 		resetform();
-    $("#addACatSection").show();
-		$("#landingSection").hide();
-		$("#catFamilySection").hide();
-		$("#aboutUsSection").hide();
+    $("#addACatSection").fadeIn(900);
+		$("#landingSection").fadeOut(900);
+		$("#catFamilySection").fadeOut(900);
+		$("#aboutUsSection").fadeOut(900);
 		$("#catFamilySectionRight").empty();
   });
 	$("#start").click(function(event){
     event.preventDefault();
-    $("#addACatSection").show();
-		$("#landingSection").hide();
+    $("#addACatSection").fadeIn(900);
+		$("#landingSection").fadeOut(900);
+
   });
 	$("#yourFamily").click(function(event){
     event.preventDefault();
 		if (newcatFamily.numberOfCats >= 1) {
 			$("#catFamilySectionRight").empty();
 			newcatFamily.showFamily();
-	    $("#catFamilySection").show();
-			$("#resultSection").hide();
-			$("#addACatSection").hide();
-			$("#landingSection").hide();
-			$("#aboutUsSection").hide();
+	    $("#catFamilySection").fadeIn(900);
+			$("#resultSection").fadeOut(900);
+			$("#addACatSection").fadeOut(900);
+			$("#landingSection").fadeOut(900);
+			$("#aboutUsSection").fadeOut(900);
 		}
   });
 	$("#aboutUs").click(function(event){
 		event.preventDefault();
-		$("#catFamilySection").hide();
-		$("#resultSection").hide();
-		$("#addACatSection").hide();
-		$("#landingSection").hide();
-		$("#aboutUsSection").show();
+		$("#catFamilySection").fadeOut(900);
+		$("#resultSection").fadeOut(900);
+		$("#addACatSection").fadeOut(900);
+		$("#landingSection").fadeOut(900);
+		$("#aboutUsSection").fadeIn(900);
 	});
 	$("#showFormAgain").click(function(event){
     event.preventDefault();
 		resetform();
-    $("#addACatSection").show();
-		$("#resultSection").hide();
+    $("#addACatSection").fadeIn(900);
+		$("#resultSection").fadeOut(900);
 		$("#catFamilySectionRight").empty();
   });
 	$("#addtoFamily").click(function(event){
     event.preventDefault();
 		newcatFamily.addtoFamily();
 		newcatFamily.showFamily();
-    $("#catFamilySection").show();
-		$("#resultSection").hide();
-		$("#adoptionLocations").hide();
-		$("#catFamilySectionLeftInner").show();
+    $("#catFamilySection").fadeIn(900);
+		$("#resultSection").fadeOut(900);
+		$("#adoptionLocations").fadeOut(900);
+		$("#catFamilySectionLeftInner").fadeIn(900);
 		resetform();
   });
 	$("#addAnotherCat").click(function(event){
     event.preventDefault();
 		resetform();
-    $("#addACatSection").show();
-		$("#resultSection").hide();
-		$("#catFamilySection").hide();
+    $("#addACatSection").fadeIn(900);
+		$("#resultSection").fadeOut(900);
+		$("#catFamilySection").fadeOut(900);
 		$("#catFamilySectionRight").empty();
   });
 	// $("#goGetThem").click(function(event){s
@@ -202,14 +203,14 @@ $(document).ready(function(){
 		$("#fam-name").text(personName + ", we'd like you to meet:");
 		$("#results").html("<span id='catResults'>" + "<p>Name: " + newCat.catName + "</p>" + "<p>Age: " + newCat.age + "</p>" + "<p>Favorite Thing: " + newCat.Random() + "</p></span>");
 		$("#photoResults").html(newCat.randomImg());
-		$("#name-section").hide();
-		$("#resultSection").show();
-		$("#addACatSection").hide();
+		$("#name-section").fadeOut(900);
+		$("#resultSection").fadeIn(900);
+		$("#addACatSection").fadeOut(900);
   });
 
 	$("#adopt").click(function(event) {
 		$("#catFamilySectionLeftInner").hide();
-		$("#adoptionLocations").show();
+		$("#adoptionLocations").fadeIn(900);
 		$("#locations").html(newcatFamily.allLocations());
 
 	});
