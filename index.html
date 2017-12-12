@@ -28,27 +28,26 @@
 				<a href="#"><li id="aboutUs">About Us</li></a>
 			</ul>
 		</div>
-			<div class="row" id="landingSection">
-				<div class="col-md-6" id="body-left">
-					<h3>Everyone deserves a home filled with cats.</h3>
-					<p>Our mission is to connect loving, responsible people with the feline family of their dreams. Simply answer a few questions and our sophisticated algorithm will match you to a cat ready for adoption.</p>
-          <button id="start" class="btn-change7">Start My Search</button>
-				</div>
-				<div class="col-md-6">
-					<img id="body-img" src="img/body.jpg"></img>
-        </div>
+		<div class="row" id="landingSection">
+			<div class="col-md-6" id="body-left">
+				<h3>Everyone deserves a home filled with cats.</h3>
+				<p>Our mission is to connect loving, responsible people with the feline family of their dreams. Simply answer a few questions and our sophisticated algorithm will match you to a cat ready for adoption.</p>
+        <button id="start" class="btn-change7">Start My Search</button>
+			</div>
+  		<div class="col-md-6">
+				<img id="body-img" src="img/body.jpg"></img>
       </div>
-
-      <div class="row" id="addACatSection">
-        <div class="col-md-6" id="addACatSectionLeft">
-					<h3>Tell us about your ideal cat:</h3>
-						<form id="cat-form">
-							<div class="form-group">
-	              <label for="name">Your Name:</label>
-	              <input id="name" type="text" class="form-control">
-							</div>
+    </div>
+    <div class="row" id="addACatSection">
+      <div class="col-md-6" id="addACatSectionLeft">
+				<h3>Tell us about your ideal cat:</h3>
+					<form id="cat-form">
 						<div class="form-group">
-							<label for="catName">Cat's Name:</label>
+	            <label for="name">Your Name:</label>
+	            <input id="name" type="text" class="form-control">
+						</div>
+					  <div class="form-group">
+						  <label for="catName">Cat's Name:</label>
 							<input id="catName" type="text" class="form-control">
 						</div>
               <div class="form-group">
@@ -75,16 +74,6 @@
                   <option value="black">Black</option>
                   <option value="grey">Grey</option>
 								</select>
-                <!-- <div class="radio"><label><input type="radio" name="color" value="brown" checked>Brown (or brownish)</label>
-                </div>
-                <div class="radio"><label><input type="radio" name="color" value="orange">Orange</label>
-                </div>
-                <div class="radio"><label><input type="radio" name="color" value="white">White / Cream</label>
-                </div>
-                <div class="radio"><label><input type="radio" name="color" value="black">Black</label>
-                </div>
-                <div class="radio"><label><input type="radio" name="color" value="grey">Gray</label>
-                </div> -->
               </div>
               <div class="form-group">
                 <label for="personality">Personality:</label>
@@ -94,73 +83,57 @@
 									<option value="cuddly">Cuddly</option>
 									<option value="curious">Curious</option>
 								</select>
-                <!-- <div class="radio"><label><input type="radio" name="personality" value="independent" checked>Independent</label>
-                </div>
-                <div class="radio"><label><input type="radio" name="personality" value="playful">Playful</label>
-                </div>
-                <div class="radio"><label><input type="radio" name="personality" value="cuddly">Cuddly</label>
-                </div>
-                <div class="radio"><label><input type="radio" name="personality" value="curious">Curious</label>
-                </div> -->
               </div>
               <button type="submit" id="dreamCat">Show me my dream cat!</button>
             </form>
           </div>
-          <div class="col-md-6">
-            <img id="form-img" src="img/form.jpg"></img>
-          </div>
+        <div class="col-md-6">
+          <img id="form-img" src="img/form.jpg"></img>
         </div>
+      </div>
 
-        <div class="row" id="resultSection">
-          <div class="col-md-6" id="resultsSection-left">
-            <div id="name-header"><h2><span id="fam-name"></span></h2></div>
-    				<span id="results"></span>
-            <button type="submit" id="addtoFamily">Save to Family</button>
-            <button type="submit" id="showFormAgain">Pick Another</button>
-          </div>
-          <div class="col-md-6" id="photoResults">
-          </div>
+    <div class="row" id="resultSection">
+      <div class="col-md-6" id="resultsSection-left">
+        <div id="name-header"><h2><span id="fam-name"></span></h2></div>
+      		<span id="results"></span>
+          <button type="submit" id="addtoFamily">Save to Family</button>
+          <button type="submit" id="showFormAgain">Pick Another</button>
         </div>
+      <div class="col-md-6" id="photoResults">
+      </div>
+    </div>
 
-        <div class="row" id="catFamilySection">
-          <div class="col-md-6" id="catFamilySectionLeft">
-						<div id="catFamilySectionLeftInner">
-            <h2>Your Cat Family</h2>
-						<p>You're just a click away from making your new cat family a reality. Click the "Adopt Now" button to see the shelter locations where your new feline friends are waiting for you. Not ready for the commitment, or want to add another cat to your family? Click "Pick Another" to go back to the cat finder form.</p>
-						<button type="submit" id="adopt">Adopt Now</button>
-            <button type="submit" id="addAnotherCat">Pick Another</button>
-						</div>
-						<div id="adoptionLocations">
-							<h3>Here's where to find your new family members:</h3>
-							<div id="locations"></div>
-						</div>
-          </div>
-          <div class="col-md-6" id="catFamilySectionRight">
-          </div>
-        </div>
+    <div class="row" id="catFamilySection">
+      <div class="col-md-6" id="catFamilySectionLeft">
+				<div id="catFamilySectionLeftInner">
+          <h2>Your Cat Family</h2>
+					<p>You're just a click away from making your new cat family a reality. Click the "Adopt Now" button to see the shelter locations where your new feline friends are waiting for you. Not ready for the commitment, or want to add another cat to your family? Click "Pick Another" to go back to the cat finder form.</p>
+					<button type="submit" id="adopt">Adopt Now</button>
+          <button type="submit" id="addAnotherCat">Pick Another</button>
+				</div>
+			  <div id="adoptionLocations">
+					<h3>Here's where to find your new family members:</h3>
+				  <div id="locations"></div>
+				</div>
+      </div>
+      <div class="col-md-6" id="catFamilySectionRight">
+      </div>
+    </div>
 
-        <div class="row" id="aboutUsSection">
-          <div class="col-md-4">
-						<img src="img/amc.jpg" alt="Anna Marie Cooper" class="about-img"></img>
-						<i>President and CEO Anna Marie Cooper</i>
-          </div>
-					<div class="col-md-4">
-						<h2>About Us</h2>
-						<p>Cat Family, a Cooparisot Company, was formed in 2017 with the mission of helping loving, responsible adults build the cat families of their dreams. Our sophisticated algorithm connects with local animal shelters to match cats in need with friends indeed.
-					</div>
-          <div class="col-md-4">
-						<img src="img/bp.jpg" alt="Ben Parisot" class="about-img"></img>
-						<i>Chief Cat Handler Ben Parisot</i>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
+    <div class="row" id="aboutUsSection">
+      <div class="col-md-4">
+				<img src="img/amc.jpg" alt="Anna Marie Cooper" class="about-img"></img>
+					<i>President and CEO Anna Marie Cooper</i>
+      </div>
+			<div class="col-md-4">
+				<h2>About Us</h2>
+					<p>Cat Family, a Cooparisot Company, was formed in 2017 with the mission of helping loving, responsible adults build the cat families of their dreams. Our sophisticated algorithm connects with local animal shelters to match cats in need with friends indeed.
+			</div>
+      <div class="col-md-4">
+				<img src="img/bp.jpg" alt="Ben Parisot" class="about-img"></img>
+				<i>Chief Cat Handler Ben Parisot</i>
+      </div>
+    </div>
   </div>
   <div id="footer">
 		<a target="blank" href="https://www.facebook.com/Cat-Memes-1741846162755575/"><img src="img/facebook.png" alt="facebook logo"></img></a>
@@ -168,5 +141,5 @@
 		<a target="blank" href="https://www.instagram.com/ilovecatmemes/?hl=en"><img src="img/instagram.png" alt="instagram logo"></img></a>
     <p>Copyright &copy; 2017 Cat Family: A Cooparisot Company. All rights reserved.</p>
   </div>
-  </body>
+ </body>
 </html>
