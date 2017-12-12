@@ -180,8 +180,12 @@ label {
 
 #catFamilySectionLeft {
 	text-align: center;
-	padding-top: 25px;
+	padding: 25px 10px;
 	font-size: 18px;
+}
+
+#catFamilySectionLeftInner {
+	padding-left: 15px;
 }
 
 #catFamilySectionLeft h2 {
@@ -214,9 +218,9 @@ label {
 }
 
 #catFamRow {
-	margin: 15px;
+	margin: 10px 25px 10px 10px;
 	padding: 10px 5px;
-	border: solid 1px #F4AFB4;
+	border: solid 3px #F4AFB4;
 	border-radius: 15px;
 	/*color: white;*/
 	font-size: 18px;
