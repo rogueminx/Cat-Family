@@ -11,11 +11,11 @@ function Cat (catName, age, personality, color) {
 	this.playful = ["Attacking ankles", "Playing with toy mice", "Chasing laser pointers", "Rolling around on the floor for no reason", "Eating house plants", "Playing fetch", "Eating catnip, and then running around the house"];
 	this.cuddly = ["Sitting on your lap", "Being held like a baby", "Laying on your computer when you are trying to work", "Purring", "Waking you up by putting their paw on your face", "Sleeping under the blankets", "Baking bread", "Good ear scratches"];
 	this.curious = ["Trying to catch birds through windows", "Climbing onto the refridgerator", "Batting breakables off of shelves", "Greeting visitors", "Trying to escape out the front door", "Eating food you left on out on the counter", "Getting lost in walls"];
-	this.orange = ["<img src='img/orange/orange01.jpg' width='100%'>", "<img src='img/orange/orange02.jpg' width='100%'>"];
-	this.white = ["<img src='img/white/white01.jpg' width='100%'>", "<img src='img/white/white02.jpg' width='100%'>", "<img src='img/white/white03.jpg' width='100%'>"];
-	this.black = ["<img src='img/black/black01.jpg' width='100%'>"];
-	this.brown = ["<img src='img/brown/brown01.jpg' width='100%'>", "<img src='img/brown/brown02.jpg' width='100%'>", "<img src='img/brown/brown03.jpg' width='100%'>"];
-	this.grey = ["<img src='img/grey/grey01.jpg' width='100%'>", "<img src='img/grey/grey02.jpg' width='100%'>", "<img src='img/grey/grey03.jpg' width='100%'>"];
+	this.orange = ["<img src='img/orange/orange01.jpg' width='100%'>", "<img src='img/orange/orange02.jpg' width='100%'>", "<img src='img/orange/orange03.jpg' width='100%'>", "<img src='img/orange/orange04.jpg' width='100%'>", "<img src='img/orange/orange05.jpg' width='100%'>"];
+	this.white = ["<img src='img/white/white01.jpg' width='100%'>", "<img src='img/white/white02.jpg' width='100%'>", "<img src='img/white/white03.jpg' width='100%'>", "<img src='img/white/white04.jpg' width='100%'>", "<img src='img/white/white05.jpg' width='100%'>"];
+	this.black = ["<img src='img/black/black01.jpg' width='100%'>", "<img src='img/black/black02.jpg' width='100%'>", "<img src='img/black/black03.jpg' width='100%'>", "<img src='img/black/black04.jpg' width='100%'>", "<img src='img/black/black05.jpg' width='100%'>"];
+	this.brown = ["<img src='img/brown/brown01.jpg' width='100%'>", "<img src='img/brown/brown02.jpg' width='100%'>", "<img src='img/brown/brown03.jpg' width='100%'>", "<img src='img/brown/brown04.jpg' width='100%'>", "<img src='img/brown/brown05.jpg' width='100%'>"];
+	this.grey = ["<img src='img/grey/grey01.jpg' width='100%'>", "<img src='img/grey/grey02.jpg' width='100%'>", "<img src='img/grey/grey05.jpg' width='100%'>", "<img src='img/grey/grey04.jpg' width='100%'>", "<img src='img/grey/grey01.jpg' width='100%'>"];
 	this.location = ["Oregon Humane Society, 1067 NE Columbia Blvd, Portland", "The Pixie Project, 510 NE Martin Luther King Jr Blvd, Portland", "Cat Adoption Team, 14175 SW Galbreath Dr, Sherwood", "Furry Friends Cat Rescue, 6715 NE 63rd St #450, Vancouver", "Animal Aid Inc, 5335 SW 42nd Ave, Portland"]
 	};
 
