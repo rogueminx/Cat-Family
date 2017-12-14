@@ -38,34 +38,27 @@ Cat.prototype.Random = function() {
 			return (this.catTrait);
   } else if (this.personalityAnswer === "playful") {
 			this.catTrait = (this.playful[Math.floor(Math.random() * this.playful.length)]);
-			// catFamily.catPersonality.push(playfulTrait);
 			return (this.catTrait);
   } else (this.personalityAnswer === "independent")
 			this.catTrait = (this.independent[Math.floor(Math.random() * this.independent.length)]);
-			// catFamily.catPersonality.push(independentTrait);
 			return (this.catTrait);
 };
 
 Cat.prototype.randomImg = function() {
   if (this.catColor === "orange") {
       this.catPhoto = this.orange[Math.floor(Math.random() * this.orange.length)];
-			// catFamily.catPhoto.push(orangePic);
 			return (this.catPhoto);
 		} else if (this.catColor === "black") {
 	    this.catPhoto = this.black[Math.floor(Math.random() * this.black.length)];
-			// catFamily.catPhoto.push(blackPic);
 			return (this.catPhoto);
 		} else if (this.catColor === "white") {
 		  this.catPhoto = this.white[Math.floor(Math.random() * this.white.length)];
-			// catFamily.catPhoto.push(whitePic);
 			return (this.catPhoto);
 		} else if (this.catColor === "grey") {
 		  this.catPhoto = this.grey[Math.floor(Math.random() * this.grey.length)];
-			// catFamily.catPhoto.push(greyPic);
 			return (this.catPhoto);
 		} else {
 			this.catPhoto = this.brown[Math.floor(Math.random() * this.brown.length)];
-			// catFamily.catPhoto.push(brownPic);
 			return (this.catPhoto);
 		}
 };
@@ -156,6 +149,16 @@ $(document).ready(function(){
 			$("#aboutUsSection").fadeOut(0);
 		}
   });
+
+	$("#homeNav").click(function(event){
+		event.preventDefault();
+		$("#catFamilySection").hide();
+		$("#resultSection").fadeOut(0);
+		$("#addACatSection").fadeOut(0);
+		$("#landingSection").fadeOut(0);
+		$("#aboutUsSection").fadeOut(0);
+		$("#landingSection").fadeIn(900);
+	});
 
 	$("#aboutUs").click(function(event){
 		event.preventDefault();

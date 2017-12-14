@@ -68,6 +68,10 @@ button:hover{
 	background-color: white;
 }
 
+#homeNav:hover {
+	color: #3D4F53;
+}
+
 #nav ul {
 	list-style: none;
 	text-align: center;
