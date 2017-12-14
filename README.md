@@ -1,12 +1,12 @@
-# _Cat Family Generator_
+# Cat Family Generator
 
-#### _Website that takes user input and returns cat families. 11/11/2017_
+#### Website that takes user input and returns cat families. 11/11/2017
 
-#### By _**Anna Marie Cooper & Ben Parisot**_
+#### By **Anna Marie Cooper & Ben Parisot**
 
 ## Description
 
-Using Javascript, the website takes the user input and returns a count of numbers up to that number. Except it says ping for any numbers divisible by three, pong for anything divisible by 5, and pingpong for anything divisible by both.
+Using Javascript, the website takes the user input and matches them with their perfect cat friend. They collect their desired cats into a "cat family," and then when ready, learn where they can pick up each member of their new family.
 
 #### Behavior
 1. It can generate cat photos
@@ -18,31 +18,33 @@ Using Javascript, the website takes the user input and returns a count of number
 4. It can take in the cat's name and give it to the cat
   * example input: Theo
   * example output: Theo
-5. It can take in desired personality traits and return 3 randomly generated cat behaviors.
+5. It can take in desired personality traits and return 1 randomly generated cat behaviors.
   * example input: playful
-  * example output: likes chasing mice, running, and playing with feathers
+  * example output: likes playing with feathers
 
 ## Setup/Installation Requirements
 
-* _Open terminal_
-* _Move to desired folder_
-* _Type "git clone https://github.com/rogueminx/ping-pong.git"_
-* _Open index.html in browser of choice_
+* Open terminal
+* Move to desired folder
+* Type "git clone https://github.com/rogueminx/cat-family.git"
+* Open index.html in browser of choice
 
 ## Known Bugs
 
-_None_
+None
 
 ## Support and contact details
 
-_Please contact me at annamarie@rogueminx.com with questions._
+Please contact Anna Marie at annamarie@rogueminx.com or Ben Parisot  at me@benparisot.com with questions.
 
 ## Technologies Used
 
-* _HTML_
-* _CSS_
-* _Javascript_
+* HTML
+* CSS
+* Javascript
+* JQuery
+* Bootstrap
 
 ### License
 
-Copyright (c) 2017 **Anna Marie Cooper**
+Copyright (c) 2017 **Anna Marie Cooper & Ben Parisot**

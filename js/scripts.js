@@ -132,16 +132,16 @@ $(document).ready(function(){
     event.preventDefault();
 		resetform();
     $("#addACatSection").fadeIn(900);
-		$("#landingSection").fadeOut(900);
-		$("#catFamilySection").fadeOut(900);
-		$("#aboutUsSection").fadeOut(900);
+		$("#landingSection").fadeOut(0);
+		$("#catFamilySection").fadeOut(0);
+		$("#aboutUsSection").fadeOut(0);
 		$("#catFamilySectionRight").empty();
   });
 
 	$("#start").click(function(event){
     event.preventDefault();
     $("#addACatSection").fadeIn(900);
-		$("#landingSection").fadeOut(900);
+		$("#landingSection").fadeOut(0);
   });
 
 	$("#yourFamily").click(function(event){
@@ -150,19 +150,19 @@ $(document).ready(function(){
 			$("#catFamilySectionRight").empty();
 			newcatFamily.showFamily();
 	    $("#catFamilySection").fadeIn(900);
-			$("#resultSection").fadeOut(900);
-			$("#addACatSection").fadeOut(900);
-			$("#landingSection").fadeOut(900);
-			$("#aboutUsSection").fadeOut(900);
+			$("#resultSection").fadeOut(0);
+			$("#addACatSection").fadeOut(0);
+			$("#landingSection").fadeOut(0);
+			$("#aboutUsSection").fadeOut(0);
 		}
   });
 
 	$("#aboutUs").click(function(event){
 		event.preventDefault();
 		$("#catFamilySection").hide();
-		$("#resultSection").fadeOut(900);
-		$("#addACatSection").fadeOut(900);
-		$("#landingSection").fadeOut(900);
+		$("#resultSection").fadeOut(0);
+		$("#addACatSection").fadeOut(0);
+		$("#landingSection").fadeOut(0);
 		$("#aboutUsSection").fadeIn(900);
 	});
 
@@ -170,7 +170,7 @@ $(document).ready(function(){
     event.preventDefault();
 		resetform();
     $("#addACatSection").fadeIn(900);
-		$("#resultSection").fadeOut(900);
+		$("#resultSection").fadeOut(0);
 		$("#catFamilySectionRight").empty();
   });
 
@@ -179,9 +179,9 @@ $(document).ready(function(){
 		newcatFamily.addtoFamily();
 		newcatFamily.showFamily();
     $("#catFamilySection").fadeIn(900);
-		$("#resultSection").fadeOut(900);
-		$("#adoptionLocations").fadeOut(900);
-		$("#catFamilySectionLeftInner").fadeIn(900);
+		$("#resultSection").fadeOut(0);
+		$("#adoptionLocations").fadeOut(0);
+		$("#catFamilySectionLeftInner").fadeIn(0);
 		resetform();
   });
 
@@ -189,8 +189,8 @@ $(document).ready(function(){
     event.preventDefault();
 		resetform();
     $("#addACatSection").fadeIn(900);
-		$("#resultSection").fadeOut(900);
-		$("#catFamilySection").fadeOut(900);
+		$("#resultSection").fadeOut(0);
+		$("#catFamilySection").fadeOut(0);
 		$("#catFamilySectionRight").empty();
   });
 
@@ -205,9 +205,9 @@ $(document).ready(function(){
 		$("#fam-name").text(personName + ", we'd like you to meet:");
 		$("#results").html("<span id='catResults'>" + "<p>Name: " + newCat.catName + "</p>" + "<p>Age: " + newCat.age + "</p>" + "<p>Favorite Thing: " + newCat.Random() + "</p></span>");
 		$("#photoResults").html(newCat.randomImg());
-		$("#name-section").fadeOut(900);
+		$("#name-section").fadeOut(0);
 		$("#resultSection").fadeIn(900);
-		$("#addACatSection").fadeOut(900);
+		$("#addACatSection").fadeOut(0);
   });
 
 	$("#adopt").click(function(event) {
@@ -215,5 +215,5 @@ $(document).ready(function(){
 		$("#adoptionLocations").fadeIn(900);
 		$("#locations").html(newcatFamily.allLocations());
 	});
-	
+
 });
